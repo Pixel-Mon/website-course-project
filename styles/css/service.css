@@ -1,0 +1,126 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgba(166, 202, 255, 0.2392156863);
+  color: #0c2340;
+  margin: 0;
+  padding: 0;
+}
+
+.service-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.service-container .service-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.service-container .service-intro h1 {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+.service-container .service-intro p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.service-container .centered-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 30px 0;
+  color: #003366;
+}
+.service-container .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+.service-container .card-grid .hover-card {
+  position: relative;
+  background: #f1f5fe;
+  padding: 24px 20px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.service-container .card-grid .hover-card h3 {
+  margin: 0;
+  color: #003366;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+.service-container .card-grid .hover-card p {
+  margin-top: 0.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-width: 90%;
+}
+.service-container .card-grid .hover-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+.service-container .card-grid .hover-card:hover h3 {
+  transform: translateY(-20px);
+  font-size: 1.25rem;
+}
+.service-container .card-grid .hover-card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.service-container .service-calc {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: 0 auto;
+}
+.service-container .service-calc .calc-form {
+  display: grid;
+  gap: 1.5rem;
+}
+.service-container .service-calc .calc-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.service-container .service-calc .calc-form .form-group input,
+.service-container .service-calc .calc-form .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.service-container .service-calc button {
+  background-color: #3e5c76;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.service-container .service-calc button:hover {
+  background-color: #2c4258;
+}
+.service-container .service-calc .calc-result {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #003366;
+}/*# sourceMappingURL=service.css.map */

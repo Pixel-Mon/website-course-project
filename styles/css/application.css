@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Стили для формы в личном кабинете */
+.form-wrapper {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.form-wrapper h1 {
+  text-align: center;
+  color: #0c2340;
+  margin-bottom: 1rem;
+}
+.form-wrapper label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.form-wrapper input,
+.form-wrapper select,
+.form-wrapper textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.form-wrapper button {
+  background-color: #0c2340;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+.form-wrapper .success-message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 1rem;
+}/*# sourceMappingURL=application.css.map */

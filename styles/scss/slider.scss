@@ -1,0 +1,114 @@
+.news-slider {
+  position: relative;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f0f4ff, #eaf2fb);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+
+  .slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+
+    .slider-container {
+      display: flex;
+      transition: transform 0.5s ease;
+
+      .news-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 2rem;
+        background: white;
+        border-radius: 1.2rem;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+
+        img {
+          max-width: 300px;
+          max-height: 200px;
+          border-radius: 1rem;
+          object-fit: cover;
+          flex-shrink: 0;
+        }
+
+        .news-slide-content {
+          max-width: 600px;
+
+          h3 {
+            font-size: 1.8rem;
+            color: #183c66;
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+  }
+
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0c2340;
+    border: none;
+    color: white;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, opacity 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1;
+
+    &:hover {
+      background-color: #16395f;
+      opacity: 1;
+    }
+  }
+
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .news-slide {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .slider-btn {
+      font-size: 1.5rem;
+      padding: 0.6rem;
+
+      #prevBtn {
+        left: 5px;
+      }
+
+      #nextBtn {
+        right: 5px;
+      }
+    }
+  }
+}

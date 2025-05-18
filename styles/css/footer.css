@@ -1,0 +1,24 @@
+footer {
+  background-color: #0c2340;
+  color: white;
+  padding: 30px 0 0 60px;
+  margin-top: 48px;
+}
+footer .footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 27px;
+}
+footer a.active {
+  text-decoration: underline;
+}
+footer .connection {
+  margin-top: 10px;
+  display: inline-block;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,28 @@
+footer {
+  background-color: #0c2340;
+  color: white;
+  padding: 30px 0 0 60px;
+  margin-top: 48px;
+
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 27px;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  .connection {
+    margin-top: 10px;
+    display: inline-block;
+  }
+}

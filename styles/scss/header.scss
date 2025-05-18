@@ -1,0 +1,81 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c2340;
+  color: white;
+  padding: 16px 32px;
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-nav {
+    a {
+      text-decoration: none;
+      color: white;
+      margin-left: 20px;
+      font-size: 18px;
+      position: relative;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+
+    div {
+      width: 25px;
+      height: 3px;
+      background: white;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  // Мобильная адаптация
+  @media (max-width: 768px) {
+    .header-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0c2340;
+      position: absolute;
+      top: 64px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      z-index: 999;
+
+      &.show {
+        display: flex;
+      }
+    }
+
+    .burger {
+      display: flex;
+    }
+
+    header {
+      position: relative;
+      padding: 16px;
+
+      nav {
+        justify-content: center;
+      }
+    }
+  }
+}

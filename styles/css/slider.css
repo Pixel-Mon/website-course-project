@@ -1,0 +1,99 @@
+.news-slider {
+  position: relative;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f0f4ff, #eaf2fb);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.news-slider .slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+.news-slider .slider-wrapper .slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.news-slider .slider-wrapper .slider-container .news-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 2rem;
+  background: white;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.news-slider .slider-wrapper .slider-container .news-slide img {
+  max-width: 300px;
+  max-height: 200px;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+.news-slider .slider-wrapper .slider-container .news-slide .news-slide-content {
+  max-width: 600px;
+}
+.news-slider .slider-wrapper .slider-container .news-slide .news-slide-content h3 {
+  font-size: 1.8rem;
+  color: #183c66;
+  margin-bottom: 0.75rem;
+}
+.news-slider .slider-wrapper .slider-container .news-slide .news-slide-content p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}
+.news-slider .slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0c2340;
+  border: none;
+  color: white;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  opacity: 0.8;
+  transition: background-color 0.3s ease, opacity 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.news-slider .slider-btn:hover {
+  background-color: #16395f;
+  opacity: 1;
+}
+.news-slider #prevBtn {
+  left: 10px;
+}
+.news-slider #nextBtn {
+  right: 10px;
+}
+@media (max-width: 768px) {
+  .news-slider .news-slide {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .news-slider .news-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  .news-slider .slider-btn {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+  }
+  .news-slider .slider-btn #prevBtn {
+    left: 5px;
+  }
+  .news-slider .slider-btn #nextBtn {
+    right: 5px;
+  }
+}/*# sourceMappingURL=slider.css.map */

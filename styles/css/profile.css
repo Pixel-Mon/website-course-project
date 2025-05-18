@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Контейнер профиля */
+.profile-container {
+  max-width: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Кнопка сохранения профиля */
+  /* Группа кнопок */
+}
+.profile-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.profile-container #saveProfileBtn {
+  padding: 10px;
+  background-color: #247FFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.profile-container #saveProfileBtn:hover {
+  background-color: #0d6cf2;
+}
+.profile-container .button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.profile-container .button-group button {
+  padding: 10px;
+  background-color: #247FFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.profile-container .button-group button:hover {
+  background-color: #0d6cf2;
+}/*# sourceMappingURL=profile.css.map */
